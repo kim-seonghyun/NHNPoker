@@ -2,9 +2,9 @@ package com.nhnpoker;
 
 public class Card extends CardRule{
     private Suit suit;
-    private String rank;
+    private Ranks rank;
 
-    public Card(Suit suit, String rank) {
+    public Card(Suit suit, Ranks rank) {
         this.suit = suit;
         this.rank = rank;
     }
@@ -13,7 +13,7 @@ public class Card extends CardRule{
         return suit;
     }
 
-    public String getRank() {
+    public Ranks getRank() {
         return rank;
     }
 }

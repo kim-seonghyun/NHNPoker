@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60d21ada-be19-46fe-a07e-7efafe379470" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/CardRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Dealer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/PokerShell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POKERTest.java" afterDir="false" />
+    <list default="true" id="60d21ada-be19-46fe-a07e-7efafe379470" name="변경" comment="[feat]페어 구현 중, 미완성">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/CardRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/CardRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/PokerShell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/PokerShell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POKERTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POKERTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +31,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kim-seonghyun"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3fd15d4c-cada-4fdc-bcf5-c3486c632c5a" />
+        <option name="url" value="https://github.com/kim-seonghyun/NHNPoker.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2V9JlZ22AcJt7aJHwL1TPinzs5l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,12 +63,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/gimseonghyeon/Desktop/maven-test/POKER/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "라이브러리",
     "project.structure.proportion": "0.15",
@@ -67,12 +79,55 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="POKERTest.testGeneratedCardPack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.POKERTest.testCheckHandRankings">
+    <configuration name="PokerShell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nhnpoker.PokerShell" />
+      <module name="POKER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnpoker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POKERTest.testAddCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="POKER" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="POKERTest" />
-      <option name="METHOD_NAME" value="testGeneratedCardPack" />
+      <option name="METHOD_NAME" value="testAddCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POKERTest.testCheckHandRankings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="POKER" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="POKERTest" />
+      <option name="METHOD_NAME" value="testCheckHandRankings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POKERTest.testDeleteCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="POKER" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="POKERTest" />
+      <option name="METHOD_NAME" value="testDeleteCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POKERTest.testDeleteCard_underflow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="POKER" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="POKERTest" />
+      <option name="METHOD_NAME" value="testDeleteCard_underflow" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,7 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.POKERTest.testGeneratedCardPack" />
+        <item itemvalue="JUnit.POKERTest.testCheckHandRankings" />
+        <item itemvalue="애플리케이션.PokerShell" />
+        <item itemvalue="JUnit.POKERTest.testDeleteCard_underflow" />
+        <item itemvalue="JUnit.POKERTest.testDeleteCard" />
+        <item itemvalue="JUnit.POKERTest.testAddCard" />
       </list>
     </recent_temporary>
   </component>
@@ -92,12 +151,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694242513436</updated>
-      <workItem from="1694242514446" duration="6335000" />
+      <workItem from="1694242514446" duration="13102000" />
+      <workItem from="1694270392820" duration="3548000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[feat]페어 구현 중, 미완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]페어 구현 중, 미완성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
