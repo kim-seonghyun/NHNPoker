@@ -67,18 +67,18 @@ public class POKERTest {
     @DisplayName("checkHandRankings")
     void testCheckHandRankings(){
         User user = new User();
-        Card card1 = new Card(CardRule.Suit.Heart, CardRule.Ranks.ONE);
-        Card card2 = new Card(CardRule.Suit.Diamond, CardRule.Ranks.ONE);
-        Card card3 = new Card(CardRule.Suit.Heart, CardRule.Ranks.TWO);
-        Card card4 = new Card(CardRule.Suit.Clover, CardRule.Ranks.TWO);
-        Card card5 = new Card(CardRule.Suit.Heart, CardRule.Ranks.TWO);
+        Card card1 = new Card(CardRule.Suit.Heart, CardRule.Ranks.Q);
+        Card card2 = new Card(CardRule.Suit.Diamond, CardRule.Ranks.Q);
+        Card card3 = new Card(CardRule.Suit.Heart, CardRule.Ranks.FIVE);
+        Card card4 = new Card(CardRule.Suit.Clover, CardRule.Ranks.FIVE);
+        Card card5 = new Card(CardRule.Suit.Heart, CardRule.Ranks.FIVE);
 
         user.addCard(card1);
         user.addCard(card2);
         user.addCard(card3);
         user.addCard(card4);
         user.addCard(card5);
-        Assertions.assertEquals(CardRule.Ranks.TWO, user.getHandRankings().get(CardRule.handRankings.TWOPAIR));
+        Assertions.assertEquals(CardRule.Ranks.Q, user.getHandRankings().get(CardRule.handRankings.TWOPAIR));
     }
 
 }
