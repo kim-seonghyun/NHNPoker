@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60d21ada-be19-46fe-a07e-7efafe379470" name="변경" comment="[feat]페어 구현 중, 미완성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/POKERTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POKERTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,26 +72,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.POKERTest.testCheckHandRankings">
-    <configuration name="PokerShell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nhnpoker.PokerShell" />
-      <module name="POKER" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nhnpoker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="POKERTest.testAddCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.POKERTest">
+    <configuration name="POKERTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="POKER" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="POKERTest" />
-      <option name="METHOD_NAME" value="testAddCard" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,21 +92,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POKERTest.testDeleteCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="POKERTest.testCheckHandRankingsHighCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="POKER" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="POKERTest" />
-      <option name="METHOD_NAME" value="testDeleteCard" />
+      <option name="METHOD_NAME" value="testCheckHandRankingsHighCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POKERTest.testDeleteCard_underflow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="POKERTest.testCheckHandRankingsOnepair" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="POKER" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="POKERTest" />
-      <option name="METHOD_NAME" value="testDeleteCard_underflow" />
+      <option name="METHOD_NAME" value="testCheckHandRankingsOnepair" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POKERTest.testGeneratedCardPack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="POKER" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="POKERTest" />
+      <option name="METHOD_NAME" value="testGeneratedCardPack" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.POKERTest" />
+        <item itemvalue="JUnit.POKERTest.testGeneratedCardPack" />
+        <item itemvalue="JUnit.POKERTest.testCheckHandRankingsHighCard" />
         <item itemvalue="JUnit.POKERTest.testCheckHandRankings" />
-        <item itemvalue="애플리케이션.PokerShell" />
-        <item itemvalue="JUnit.POKERTest.testDeleteCard_underflow" />
-        <item itemvalue="JUnit.POKERTest.testDeleteCard" />
-        <item itemvalue="JUnit.POKERTest.testAddCard" />
+        <item itemvalue="JUnit.POKERTest.testCheckHandRankingsOnepair" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +143,8 @@
       <workItem from="1694242514446" duration="13102000" />
       <workItem from="1694270392820" duration="3548000" />
       <workItem from="1694273954433" duration="38000" />
-      <workItem from="1694274004504" duration="38000" />
+      <workItem from="1694274004504" duration="62000" />
+      <workItem from="1694313457954" duration="1077000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]페어 구현 중, 미완성">
       <option name="closed" value="true" />
@@ -156,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694273957597</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[feat]페어 구현 중, 미완성">
+      <option name="closed" value="true" />
+      <created>1694274055732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694274055732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +182,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/POKERTest.java</url>
-          <line>57</line>
+          <line>55</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

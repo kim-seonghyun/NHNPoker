@@ -33,11 +33,14 @@ public class User {
 
             if(previousRank.getValue() == card.getRank().getValue()){
                 pairCardCounter++;
+                if(highNumber.getValue() <= card.getRank().getValue()){
+                    highNumber =card.getRank();
+                }
             }else{
                 if(pairCardCounter >=2){
                     sameRankCardCounter++;
-                    if(highNumber.getValue() <= card.getRank().getValue()){
-                        highNumber =card.getRank();
+                    if(highNumber.getValue() <= previousRank.getValue()){
+                        highNumber =previousRank;
                     }
                 }
                 previousRank = card.getRank();
@@ -52,7 +55,7 @@ public class User {
             }
         }
 
-        Map<CardRule.handRankings, CardRule.Ranks> map =  new HashMap();
+        Map<CardRule.handRankings, CardRule.Ranks> map = new HashMap();
 
 
         if(sameRankCardCounter == 1){
@@ -62,6 +65,7 @@ public class User {
             map.put(CardRule.handRankings.TWOPAIR, highNumber);
             return map;
         }else{
+            highNumber = cardList.get(cardList.size()-1).getRank();
             map.put(CardRule.handRankings.HIGHCARD, highNumber);
             return map;
         }
