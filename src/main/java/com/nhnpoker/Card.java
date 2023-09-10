@@ -1,10 +1,10 @@
 package com.nhnpoker;
 
-public class Card extends CardRule{
+public class Card extends CardRule {
     private Suit suit;
-    private Ranks rank;
+    private Rank rank;
 
-    public Card(Suit suit, Ranks rank) {
+    public Card(Suit suit, Rank rank) {
         this.suit = suit;
         this.rank = rank;
     }
@@ -13,7 +13,7 @@ public class Card extends CardRule{
         return suit;
     }
 
-    public Ranks getRank() {
+    public Rank getRank() {
         return rank;
     }
 }

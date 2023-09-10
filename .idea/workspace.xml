@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60d21ada-be19-46fe-a07e-7efafe379470" name="변경" comment="[feat]페어 구현 중, 미완성">
+    <list default="true" id="60d21ada-be19-46fe-a07e-7efafe379470" name="변경" comment="[feat]유저 족보 확인메서드 구현 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/CardRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/CardRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/PokerShell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/PokerShell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnpoker/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnpoker/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/POKERTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POKERTest.java" afterDir="false" />
     </list>
@@ -72,7 +77,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.POKERTest">
+  <component name="RunManager" selected="애플리케이션.PokerShell">
+    <configuration name="PokerShell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nhnpoker.PokerShell" />
+      <module name="POKER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnpoker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="POKERTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="POKER" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,31 +110,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POKERTest.testCheckHandRankingsHighCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="POKERTest.testStartGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="POKER" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="POKERTest" />
-      <option name="METHOD_NAME" value="testCheckHandRankingsHighCard" />
+      <option name="METHOD_NAME" value="testStartGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POKERTest.testCheckHandRankingsOnepair" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="POKERTest.testcheckUsersHandRanking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="POKER" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="POKERTest" />
-      <option name="METHOD_NAME" value="testCheckHandRankingsOnepair" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="POKERTest.testGeneratedCardPack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="POKER" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="POKERTest" />
-      <option name="METHOD_NAME" value="testGeneratedCardPack" />
+      <option name="METHOD_NAME" value="testcheckUsersHandRanking" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.PokerShell" />
+        <item itemvalue="JUnit.POKERTest.testcheckUsersHandRanking" />
+        <item itemvalue="JUnit.POKERTest.testStartGame" />
         <item itemvalue="JUnit.POKERTest" />
-        <item itemvalue="JUnit.POKERTest.testGeneratedCardPack" />
-        <item itemvalue="JUnit.POKERTest.testCheckHandRankingsHighCard" />
         <item itemvalue="JUnit.POKERTest.testCheckHandRankings" />
-        <item itemvalue="JUnit.POKERTest.testCheckHandRankingsOnepair" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +152,7 @@
       <workItem from="1694270392820" duration="3548000" />
       <workItem from="1694273954433" duration="38000" />
       <workItem from="1694274004504" duration="62000" />
-      <workItem from="1694313457954" duration="1077000" />
+      <workItem from="1694313457954" duration="7358000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]페어 구현 중, 미완성">
       <option name="closed" value="true" />
@@ -162,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694274055732</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[feat]유저 족보 확인메서드 구현 완료">
+      <option name="closed" value="true" />
+      <created>1694314661091</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694314661091</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +186,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[feat]페어 구현 중, 미완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat]페어 구현 중, 미완성" />
+    <MESSAGE value="[feat]유저 족보 확인메서드 구현 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]유저 족보 확인메서드 구현 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -180,10 +197,32 @@
           <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/POKERTest.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="3" />
+          <line>141</line>
+          <properties class="POKERTest" method="testCheckHandRankingsOnepair">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/POKERTest.java</url>
+          <line>159</line>
+          <properties class="POKERTest" method="testCheckHandRankingsHighCard">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/POKERTest.java</url>
+          <line>123</line>
+          <properties class="POKERTest" method="testCheckHandRankings">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

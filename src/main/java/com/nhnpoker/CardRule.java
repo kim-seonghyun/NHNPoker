@@ -1,7 +1,7 @@
 package com.nhnpoker;
 
 public class CardRule {
-    public enum Ranks {
+    public enum Rank {
         ONE(1),
         TWO(2),
         THREE(3),
@@ -19,11 +19,11 @@ public class CardRule {
 
         private final int value;
 
-        Ranks(int value) {
+        Rank(int value) {
             this.value = value;
         }
 
-        public int getValue(){
+        public int getValue() {
             return value;
         }
     }
@@ -41,13 +41,13 @@ public class CardRule {
 
         private final int value;
 
-        Suit(int value){
+        Suit(int value) {
             this.value = value;
         }
 
     }
 
-    public enum handRankings {
+    public enum HandRanking {
         HIGHCARD(0),
         ONEPAIR(1),
         TWOPAIR(2),
@@ -58,8 +58,29 @@ public class CardRule {
         }
 
         private final int value;
-        handRankings(int value) {
+
+        HandRanking(int value) {
             this.value = value;
         }
     }
+
+    public static class HandRankingAndHighNumber {
+        private HandRanking handRanking;
+        private Rank highNumber;
+
+        public HandRankingAndHighNumber(HandRanking handRanking, Rank highNumber) {
+            this.handRanking = handRanking;
+            this.highNumber = highNumber;
+        }
+
+        public HandRanking getHandRanking() {
+            return handRanking;
+        }
+
+        public Rank getHighNumber() {
+            return highNumber;
+        }
+    }
+
+
 }
